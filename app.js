@@ -25,7 +25,7 @@ console.log(arraySum([1,2,3,4,5]));
 function factorial(num){
     
     if(num===1 || num===0){
-        return 1
+        return 1;
     }
     else{
         let answer=1;
@@ -69,3 +69,15 @@ function secondLargest(arr){
     return secondLargest;
 }
 console.log(secondLargest([20,10,15,7,9]));
+// Multiplication table
+function multiplicationTable(n) {
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= n; j++) {
+        let result = i * j;
+        console.log(`${i} x ${j} = ${result}`);
+      }
+    }
+  }
+  
+  multiplicationTable(10);
+  
