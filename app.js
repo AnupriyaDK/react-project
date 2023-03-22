@@ -35,7 +35,20 @@ function factorial(num){
         }
         return answer;
     }
-    
-    
 }
 console.log(factorial(10));
+// prime or not
+function isPrime(num){
+    if(num<=1){
+        return false
+    }else{
+        for(let i=2;i<num;i++){
+            if(num%i===0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+console.log(isPrime(7));
+console.log(isPrime(6));
