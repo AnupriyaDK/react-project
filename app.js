@@ -52,3 +52,20 @@ function isPrime(num){
 }
 console.log(isPrime(7));
 console.log(isPrime(6));
+
+//Second Largest Number
+function secondLargest(arr){
+    let largest=0;
+    let secondLargest=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>largest){
+            secondLargest=largest;
+            largest=arr[i];
+        } else if(arr[i]>secondLargest && arr[i]!==largest){
+            secondLargest=arr[i];
+
+        }
+    }
+    return secondLargest;
+}
+console.log(secondLargest([20,10,15,7,9]));
