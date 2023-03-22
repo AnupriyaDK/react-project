@@ -20,3 +20,22 @@ function arraySum(arr){
     return sum;
 }
 console.log(arraySum([1,2,3,4,5]));
+
+// Factorial of a Number
+function factorial(num){
+    
+    if(num===1 || num===0){
+        return 1
+    }
+    else{
+        let answer=1;
+        for(let i=1;i<num;i++){
+            answer=answer*i;
+
+        }
+        return answer;
+    }
+    
+    
+}
+console.log(factorial(10));
